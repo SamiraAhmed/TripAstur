@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="courses">
+        <item>@string/al</item>
+        <item>@string/calc</item>
+        <item>@string/inc</item>
+        <item>@string/fi</item>
+        <item>@string/prog</item>
+        <item>@string/stat</item>
+        <item>@string/wav</item>
+        <item>@string/fcr</item>
+        <item>@string/aut</item>
+        <item>@string/met</item>
+    </string-array>
+    
+    <string-array name="teachers">
+        <item>Jesús Suárez</item>
+        <item>María Cristina Suárez</item>
+        <item>Enrique Loredo</item>
+        <item>Pablo Javier Tuya</item>
+        <item>Juan José del Coz</item>
+        <item>José Manuel González</item>
+        <item>Francisco Javier Carrizo</item>
+        <item>Rubén Usamentiaga</item>
+        <item>María del Camino Rodríguez</item>
+        <item>José Ramiro Varela</item>
+    </string-array>
+    
+    <string-array name="descriptions">
+       <item>@string/al_desc</item>
+       <item>@string/calc_desc</item>
+       <item>@string/inc_desc</item>
+       <item>@string/fi_desc</item>
+       <item>@string/prog_desc</item>
+       <item>@string/stat_desc</item>
+       <item>@string/wav_desc</item>
+       <item>@string/fcr_desc</item>
+       <item>@string/aut_desc</item>
+       <item>@string/met_desc</item>
+    </string-array>
+
+</resources>

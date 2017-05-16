@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_add_course.png",
+        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_add_course.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_book_pile.png",
+        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-xhdpi\\ic_book_pile.png"
+    }
+]
