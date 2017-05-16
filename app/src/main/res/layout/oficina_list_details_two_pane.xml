@@ -7,20 +7,20 @@
     android:orientation="horizontal"
     android:showDividers="middle" >
 
-	<fragment class="es.uniovi.imovil.jcgranda.courses.CourseListFragment"
-		android:id="@+id/course_list_frag"
+	<fragment class="es.uniovi.imovil.jcgranda.courses.OficinaListFragment"
+		android:id="@+id/oficina_list_frag"
 		android:layout_width="0dp"
 		android:layout_height="match_parent"
         android:layout_weight="1" />
 
     <FrameLayout
-        android:id="@+id/course_details_container"
+        android:id="@+id/oficina_details_container"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" >
 		
-		<fragment class="es.uniovi.imovil.jcgranda.courses.CourseDetailsFragment"
-			android:id="@+id/course_details_frag"
+		<fragment class="es.uniovi.imovil.jcgranda.courses.OficinaDetailsFragment"
+			android:id="@+id/oficina_details_frag"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent" />
 		

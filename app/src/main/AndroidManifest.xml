@@ -4,9 +4,17 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="es.uniovi.imovil.jcgranda.courses.CourseDetailsActivity"
+            android:name="es.uniovi.imovil.jcgranda.courses.OficinaDetailsActivity"
             android:label="@string/course_details"
             android:parentActivityName="es.uniovi.imovil.jcgranda.courses.MainActivity" >
             <meta-data

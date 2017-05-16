@@ -21,7 +21,7 @@
         android:paddingLeft="5dp" >
 
         <TextView
-            android:id="@+id/nameTextView"
+            android:id="@+id/nombreOficina"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -30,23 +30,12 @@
             android:paddingRight="5dp"
             android:ellipsize="end"
             android:scrollHorizontally="true"
-            android:gravity="top"		
-            android:text="@string/fcr"
+            android:gravity="top"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold"
             android:typeface="sans" />
 
-        <TextView
-            android:id="@+id/teacherTextView"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:singleLine="true"
-            android:ellipsize="end"
-            android:scrollHorizontally="true"
-            android:text="Prueba" />
+
 
     </RelativeLayout>
 

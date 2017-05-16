@@ -3,17 +3,17 @@ package es.uniovi.imovil.jcgranda.courses;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
 
-public class CourseDetailsActivity extends ActionBarActivity {
+public class OficinaDetailsActivity extends AppCompatActivity {
 	
-	public static final String DESCRIPTION = "es.uniovi.imovil.jcgranda.courses.DESCRIPTION";
+
 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.course_details_activity);
+		setContentView(R.layout.oficina_details_activity);
 		
 		// Existe el contenedor del fragmento?
 		if (findViewById(R.id.fragment_container) != null) {
@@ -23,11 +23,12 @@ public class CourseDetailsActivity extends ActionBarActivity {
 				return;
 			}
 
-			// Crear el fragmento pasndole el parmetro
+			// Crear el fragmento pasandole el parmetro
 			Intent intent = getIntent();
-		    String description = intent.getStringExtra(DESCRIPTION);
-			CourseDetailsFragment fragment =
-				CourseDetailsFragment.newInstance(description);
+			OficinasTurismo oficina = intent.getExtras().getClass(OficinasTurismo);
+
+			OficinaDetailsFragment fragment =
+				OficinaDetailsFragment.newInstance(oficina);
 			
 			// Aadir el fragmento al contenedor 'fragment_container'
 			getSupportFragmentManager().beginTransaction()

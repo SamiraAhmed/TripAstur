@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-public class MainActivity extends ActionBarActivity implements CourseListFragment.Callbacks {
+public class MainActivity extends AppCompatActivity implements OficinaListFragment.Callbacks {
 	
-	private int mCourseCount = 0;
+
 	private boolean mTwoPanes = false;
 	
 	
@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity implements CourseListFragmen
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		if (findViewById(R.id.course_details_container) != null) {
+		if (findViewById(R.id.oficina_details_container) != null) {
 			mTwoPanes = true;
 		}
 	}	
@@ -39,28 +39,27 @@ public class MainActivity extends ActionBarActivity implements CourseListFragmen
 			    
 	    switch (item.getItemId()) {
 	        case R.id.action_add_course:
-	        	FragmentManager fragmentManager = getSupportFragmentManager();	        	
-	        	CourseListFragment fragment = (CourseListFragment) fragmentManager.findFragmentById(R.id.course_list_frag);
+	        	/*FragmentManager fragmentManager = getSupportFragmentManager();
+	        	OficinaListFragment fragment = (OficinaListFragment) fragmentManager.findFragmentById(R.id.oficina_list_frag);
 	        	String name = String.format(getString(R.string.default_course_format), ++mCourseCount);
 	    		String teacher = String.format(getString(R.string.default_teacher_format), mCourseCount);
 	    		Course course = new Course(name, teacher, null);
-	            fragment.addCourse(course);
+	            fragment.addCourse(course);*/
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
 
-	@Override
-	public void onCourseSelected(Course course) {
+	public void onOficinaSelected(OficinasTurismo Oficina) {
 		
 		if (mTwoPanes) {
 			FragmentManager fragmentManager = getSupportFragmentManager();	        	
-        	CourseDetailsFragment fragment = (CourseDetailsFragment) fragmentManager.findFragmentById(R.id.course_details_frag);        	
-            fragment.setDescription(course.getDescription());
+        	OficinaDetailsFragment fragment = (OficinaDetailsFragment) fragmentManager.findFragmentById(R.id.oficina_details_frag);
+            fragment.setOficina(Oficina);
 		} else {
-			Intent intent = new Intent(this, CourseDetailsActivity.class);
-		    intent.putExtra(CourseDetailsActivity.DESCRIPTION, course.getDescription());
+			Intent intent = new Intent(this, OficinaDetailsActivity.class);
+		    intent.putExtra(OficinaDetailsActivity.DESCRIPTION, course.getDescription());
 		    startActivity(intent);			
 		}		
 	}	
