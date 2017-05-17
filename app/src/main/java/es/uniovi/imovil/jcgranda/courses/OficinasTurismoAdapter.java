@@ -3,6 +3,7 @@ package es.uniovi.imovil.jcgranda.courses;
 import java.util.List;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ public class OficinasTurismoAdapter extends BaseAdapter {
 
 	}
 	
-	private final List<OficinasTurismo> mOficinas;
+	private List<OficinasTurismo> mOficinas;
 	public LayoutInflater mInflater;
 
 	
@@ -63,6 +64,7 @@ public class OficinasTurismoAdapter extends BaseAdapter {
 		}
 		
 		OficinasTurismo oficina = (OficinasTurismo) getItem(position);
+		Log.v(this.getClass().getName(), "Hola");
 		viewHolder.mOficinaNombre.setText(oficina.getNombre());
 
 		

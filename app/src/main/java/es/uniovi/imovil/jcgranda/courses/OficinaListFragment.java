@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.DownloadManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 	public interface Callbacks {
 		public void onOficinaSelected(OficinasTurismo oficina);
 	}
-	
+	private List<OficinasTurismo> listaOficinas = new ArrayList<OficinasTurismo>();
 	private OficinasTurismoAdapter mAdapter = null;
 	private Callbacks mCallback = null;
 
@@ -61,22 +62,16 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 		View rootView;
 		rootView = inflater.inflate(R.layout.oficina_list_fragment, container, false);
 		
-		// Configurar la lista
-		ListView lvOficinas = (ListView) rootView.findViewById(R.id.list_view_oficinas);
-		OficinasTurismo oficinasT = new OficinasTurismo();
-		mAdapter = new OficinasTurismoAdapter(getActivity(), createOficinaList(oficinasT));
-		lvOficinas.setAdapter(mAdapter);
-		lvOficinas.setOnItemClickListener(this);
+		createOficinaList();
 		
 		return rootView;
 	}
 
-	private List<OficinasTurismo> createOficinaList(final OficinasTurismo Oficina) {
+	private void createOficinaList() {
 		String URL =
 				"https://www.turismoasturias.es/open-data/catalogo-de-datos?p_p_id=opendata_WAR_importportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=exportJson&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&_opendata_WAR_importportlet_structure=27532&_opendata_WAR_importportlet_robots=nofollow";
 		final String CASO_VACIO = "{\"language-id\":\"es_ES\"}";
 
-		final List<OficinasTurismo> listaOficinas = new ArrayList<OficinasTurismo>();
 
 		RequestQueue mRequestQueue = Volley.newRequestQueue(getActivity());
 		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
@@ -92,6 +87,7 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 						JSONArray arrayParametrosIniciales = oficina.getJSONArray("dynamic-element");
 
 
+                        OficinasTurismo Oficina = new OficinasTurismo();
 						Oficina.setId(String.valueOf(i));
 
 						for (int j=0; j<4; j++) {   //arrayParametrosIniciales.length() en el 4 casca, sólo hace falta hasta el 3
@@ -271,8 +267,16 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 						}
 
 						listaOficinas.add(Oficina);
+						Log.v(this.getClass().getName(), Oficina.toString() );
 
 					}
+					// Configurar la lista
+					ListView lvOficinas = (ListView) OficinaListFragment.this.getView().findViewById(R.id.list_view_oficinas);
+
+					mAdapter = new OficinasTurismoAdapter(OficinaListFragment.this.getContext(), listaOficinas);
+					lvOficinas.setAdapter(mAdapter);
+					lvOficinas.setOnItemClickListener(OficinaListFragment.this);
+
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}
@@ -283,7 +287,7 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 		});
 		mRequestQueue.add(jsonObjectRequest);
 
-		return listaOficinas;
+		//return listaOficinas;
 	}
 	
 

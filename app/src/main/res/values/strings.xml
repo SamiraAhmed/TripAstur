@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Asignaturas</string>
+    <string name="app_name">TripAstur</string>
     <string name="course_details">Detalles</string>
     <string name="action_add_course">Añadir asignatura</string>
     
-	<string name="al">Álgebra Lineal</string>
-	<string name="calc">Cálculo</string>
-	<string name="inc">Empresa</string>
-	<string name="fi">Fundamentos de Informática</string>
-	<string name="prog">Introducción a la Programación</string>
-	<string name="stat">Estadística</string>
-	<string name="wav">Ondas y Electromagnetismo</string>
-	<string name="fcr">Fundamentos de Computadores y Redes</string>
-	<string name="aut">Autómatas y Matemáticas Discretas</string>
-	<string name="met">Metodología de la Programación</string>
 
-	<string name="al_desc">Descripción de Álgebra</string>
-	<string name="calc_desc">Descripción de Cálculo</string>
-	<string name="inc_desc">Descripción de Empresa</string>
-	<string name="fi_desc">Descripción de Fundamentos de Informática</string>
-	<string name="prog_desc">Descripción de Introducción a la Programación</string>
-	<string name="stat_desc">Descripción de Estadística</string>
-	<string name="wav_desc">Descripción de Ondas y Electromagnetismo</string>
-	<string name="fcr_desc">Descripción de Fundamentos de Computadores y Redes</string>
-	<string name="aut_desc">Descripción de Autómatas y Matemáticas Discretas</string>
-	<string name="met_desc">Descripción de Metodología de la Programación</string>
-	
-	<string name="default_course_format">Asignatura %d</string>
-	<string name="default_teacher_format">Profesor %d</string>
 
 </resources>

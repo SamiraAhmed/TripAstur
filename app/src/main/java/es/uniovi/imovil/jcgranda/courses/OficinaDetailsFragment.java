@@ -58,7 +58,7 @@ public class OficinaDetailsFragment extends Fragment {
 		//ejemplo de imagen
 		//"https://www.turismoasturias.es/documents/11022/84753/OficinaTurismo1.jpg";
 		String RUTA_IMAGEN = "https://www.turismoasturias.es";
-		ImageView imagen = ((ImageView) getView().findViewById(R.id.imagen));
+  		ImageView imagen = ((ImageView) getView().findViewById(R.id.imagen));
 		URL url = null;
 		String rutaCompleta = RUTA_IMAGEN + oficina.getImagen();
 

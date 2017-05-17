@@ -135,4 +135,8 @@ public class OficinasTurismo implements Serializable {
         this.imagen = imagen;
     }
 
+    @Override
+    public String toString() {
+        return getConcejo();
+    }
 }
