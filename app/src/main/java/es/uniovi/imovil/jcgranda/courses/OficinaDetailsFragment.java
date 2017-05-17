@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.net.URL;
 
 public class OficinaDetailsFragment extends Fragment {
@@ -19,7 +20,7 @@ public class OficinaDetailsFragment extends Fragment {
 		OficinaDetailsFragment fragment = new OficinaDetailsFragment();
 		
 		Bundle args = new Bundle();
-        args.putString(DESCRIPTION_ARG, desc);
+        args.putSerializable(OficinaDetailsActivity.DESCRIPTION, (Serializable) oficina);
         fragment.setArguments(args);
         
 		return fragment;
@@ -41,12 +42,13 @@ public class OficinaDetailsFragment extends Fragment {
 		}
 					
 		Bundle args = getArguments();
-		TextView tvDescription = (TextView) rootView.findViewById(R.id.textViewDesc);
+
+
 		if (args != null) {
-			String description = args.getString(DESCRIPTION_ARG);	    
-			tvDescription.setText(description);
-		} else {
-			tvDescription.setText(null);
+			OficinasTurismo Oficina = (OficinasTurismo) args.getSerializable(OficinaDetailsActivity.DESCRIPTION);
+
+			this.setOficina(Oficina);
+
 		}
 		return rootView;
 	}

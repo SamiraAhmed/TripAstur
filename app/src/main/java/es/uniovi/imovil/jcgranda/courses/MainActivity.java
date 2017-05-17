@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.Serializable;
+
 
 public class MainActivity extends AppCompatActivity implements OficinaListFragment.Callbacks {
 	
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements OficinaListFragme
             fragment.setOficina(Oficina);
 		} else {
 			Intent intent = new Intent(this, OficinaDetailsActivity.class);
-		    intent.putExtra(OficinaDetailsActivity.DESCRIPTION, course.getDescription());
+		    intent.putExtra(OficinaDetailsActivity.DESCRIPTION, (Serializable) Oficina);
 		    startActivity(intent);			
 		}		
 	}	

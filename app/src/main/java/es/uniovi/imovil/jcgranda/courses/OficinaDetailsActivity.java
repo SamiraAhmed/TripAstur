@@ -6,10 +6,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 
 public class OficinaDetailsActivity extends AppCompatActivity {
-	
 
 
-	
+	public static final String DESCRIPTION = "Oficina";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,7 +24,7 @@ public class OficinaDetailsActivity extends AppCompatActivity {
 
 			// Crear el fragmento pasandole el parmetro
 			Intent intent = getIntent();
-			OficinasTurismo oficina = intent.getExtras().getClass(OficinasTurismo);
+			OficinasTurismo oficina = (OficinasTurismo) intent.getSerializableExtra(OficinaDetailsActivity.DESCRIPTION);
 
 			OficinaDetailsFragment fragment =
 				OficinaDetailsFragment.newInstance(oficina);
