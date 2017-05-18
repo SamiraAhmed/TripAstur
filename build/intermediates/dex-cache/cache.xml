@@ -3,48 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\pioli\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jar="C:\Users\pioli\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\pioli\Desktop\CoursesSesion5\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0_3f560d75069e783739806d6ea2e489e84c660bfb.jar" />
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\pioli\Desktop\TODO imovil\CoursesSesion5\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_7d8d9bd4afc02ead41104ae2a5fab1f03363f1a8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\pioli\.android\build-cache\9c5115565629479691557d659efa49cc149bca4b\output\jars\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\pioli\.android\build-cache\0b092e045320b606bcd981dbf69a32f65e4dc867\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\pioli\Desktop\CoursesSesion5\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0_9a741708e75fdcfdb1dc97840dabd81f5711343a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\pioli\.android\build-cache\ea928edbf441855ed197a60957490cc2f9240f0b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\pioli\Desktop\CoursesSesion5\app\build\intermediates\pre-dexed\debug\classes_581c04f17d0eae27e92bb11715c92f600968633c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\pioli\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\pioli\Desktop\CoursesSesion5\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0_3f560d75069e783739806d6ea2e489e84c660bfb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\pioli\.android\build-cache\9c5115565629479691557d659efa49cc149bca4b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\pioli\Desktop\CoursesSesion5\app\build\intermediates\pre-dexed\debug\classes_87276771b9ed4758ca475839e58605c0a1969e23.jar" />
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\pioli\Desktop\TODO imovil\CoursesSesion5\app\build\intermediates\pre-dexed\debug\classes_b8bf31e1fdfa9ca5082233e0540f8e70fe025db1.jar" />
     </item>
 
 </items>

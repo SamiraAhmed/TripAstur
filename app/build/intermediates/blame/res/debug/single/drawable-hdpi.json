@@ -1,7 +1,39 @@
 [
     {
+        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_add_course.png",
+        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-hdpi\\ic_action_add_course.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_info.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_info.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_book_pile.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_book_pile.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_search.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+    },
+    {
         "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_add_course.png",
         "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_action_add_course.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_add_course.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_action_add_course.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_book_pile.png",
+        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-hdpi\\ic_book_pile.png"
     },
     {
         "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",

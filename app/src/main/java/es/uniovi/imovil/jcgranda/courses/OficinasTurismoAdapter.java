@@ -1,5 +1,6 @@
 package es.uniovi.imovil.jcgranda.courses;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
@@ -18,6 +19,7 @@ public class OficinasTurismoAdapter extends BaseAdapter {
 	}
 	
 	private List<OficinasTurismo> mOficinas;
+	private List<OficinasTurismo> OficinasBuscadas;
 	public LayoutInflater mInflater;
 
 	
@@ -70,5 +72,6 @@ public class OficinasTurismoAdapter extends BaseAdapter {
 		
 		return rowView;
 	}
+
 
 }

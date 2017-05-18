@@ -1,12 +1,19 @@
 package es.uniovi.imovil.jcgranda.courses;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import android.app.Activity;
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +38,7 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 		public void onOficinaSelected(OficinasTurismo oficina);
 	}
 	private List<OficinasTurismo> listaOficinas = new ArrayList<OficinasTurismo>();
+	private Map<Integer, OficinasTurismo> listaOficinasMap  = new HashMap<Integer, OficinasTurismo>();
 	private OficinasTurismoAdapter mAdapter = null;
 	private Callbacks mCallback = null;
 
@@ -58,12 +66,31 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		
+
+
 		View rootView;
 		rootView = inflater.inflate(R.layout.oficina_list_fragment, container, false);
-		
+
+		Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
+		((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+		toolbar.setTitle((getActivity()).getTitle());
+
 		createOficinaList();
-		
+
+		FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab);
+		fab.setOnClickListener(new View.OnClickListener() {
+								   @Override
+								   public void onClick(View v) {
+									   Intent intent = new Intent(getActivity(), MapsActivity.class);
+									   intent.putExtra("listaOficinasMap", (Serializable) listaOficinasMap);
+									   intent.putExtra("listaOficinas", (Serializable) listaOficinas);
+									   startActivity(intent);
+								   }
+							   }
+
+		);
+
+
 		return rootView;
 	}
 
@@ -267,6 +294,7 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 						}
 
 						listaOficinas.add(Oficina);
+						listaOficinasMap.put(new Integer(Oficina.getId()), Oficina);
 						Log.v(this.getClass().getName(), Oficina.toString() );
 
 					}
@@ -289,6 +317,8 @@ public class OficinaListFragment extends Fragment implements AdapterView.OnItemC
 
 		//return listaOficinas;
 	}
+
+
 	
 
 

@@ -1,6 +1,9 @@
 package es.uniovi.imovil.jcgranda.courses;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +16,14 @@ import java.net.URL;
 
 public class OficinaDetailsFragment extends Fragment {
 	
-	private static final String OFICINAS = "oficina";
+
 
 	public static OficinaDetailsFragment newInstance(OficinasTurismo oficina) {
 		
 		OficinaDetailsFragment fragment = new OficinaDetailsFragment();
 		
 		Bundle args = new Bundle();
-        args.putSerializable(OficinaDetailsActivity.DESCRIPTION, (Serializable) oficina);
+        args.putSerializable(OficinaDetailsActivity.OFICINA, (Serializable) oficina);
         fragment.setArguments(args);
         
 		return fragment;
@@ -35,7 +38,13 @@ public class OficinaDetailsFragment extends Fragment {
 		
 		View rootView;
 		rootView = inflater.inflate(R.layout.oficina_details_fragment, container, false);
-		
+
+		FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab);
+
+
+
+
+
 		// Si estamos restaurando desde un estado previo no hacemos nada
 		if (savedInstanceState != null) {
 			return rootView;
@@ -45,7 +54,7 @@ public class OficinaDetailsFragment extends Fragment {
 
 
 		if (args != null) {
-			OficinasTurismo Oficina = (OficinasTurismo) args.getSerializable(OficinaDetailsActivity.DESCRIPTION);
+			OficinasTurismo Oficina = (OficinasTurismo) args.getSerializable(OficinaDetailsActivity.OFICINA);
 
 			this.setOficina(Oficina);
 

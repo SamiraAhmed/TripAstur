@@ -2,9 +2,12 @@
 <resources>
 
     <string name="app_name">TripAstur</string>
-    <string name="course_details">Detalles</string>
-    <string name="action_add_course">Añadir asignatura</string>
-    
+    <string name="oficina_details">Detalles</string>
+    <string name="action_search_oficinas">Buscar oficinas</string>
+    <string name="pedirPermiso">Para poder ubicarte en el mapa es necesario que des permiso de ser geolocalizado.</string>
+    <string name="tituloPedirPermiso">Aviso</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>
