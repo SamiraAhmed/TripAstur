@@ -231,7 +231,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // Asking user if explanation is needed
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
-                
+
 
                 //Prompt the user once explanation has been shown
                 ActivityCompat.requestPermissions(this,
