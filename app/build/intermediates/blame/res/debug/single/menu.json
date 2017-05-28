@@ -1,14 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_navview.xml",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\menu\\menu_navview.xml"
     },
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

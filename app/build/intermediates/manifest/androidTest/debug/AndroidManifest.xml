@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="es.uniovi.imovil.jcgranda.courses.test">
+    package="es.uniovi.imovil.samira.tripastur.test">
 
-    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="es.uniovi.imovil.jcgranda.courses"
+                     android:targetPackage="es.uniovi.imovil.samira.tripastur"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for es.uniovi.imovil.jcgranda.courses"/>
+                     android:label="Tests for es.uniovi.imovil.samira.tripastur"/>
 </manifest>

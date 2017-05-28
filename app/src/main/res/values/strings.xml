@@ -2,12 +2,25 @@
 <resources>
 
     <string name="app_name">TripAstur</string>
-    <string name="oficina_details">Detalles</string>
+    <string name="oficina_details">Descripción</string>
     <string name="action_search_oficinas">Buscar oficinas</string>
     <string name="pedirPermiso">Para poder ubicarte en el mapa es necesario que des permiso de ser geolocalizado.</string>
     <string name="tituloPedirPermiso">Aviso</string>
     <string name="ok">OK</string>
     <string name="title_activity_maps">Map</string>
-
+    <string name="action_settings">Ajustes</string>
+    <string name="mapa">Oficinas cercanas</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="navigation_drawer_open">Abrir drawer de navegación</string>
+    <string name="navigation_drawer_close">Cerrar drawer de navegación</string>
+    <string name="pref_fav">Oficinas favoritas</string>
+    <string name="pref_Ofi_titulo">Elegir las oficinas favoritas</string>
+    <string name="pref_oficinas">Oficinas favoritas del usuario</string>
+    <string name="tab_todas">Todas</string>
+    <string name="tab_favoritas">Favoritas</string>
+    <string name="Localizacion">Localización:</string>
+    <string name="Contacto">Información de contacto telefónico y fax:</string>
+    <string name="ContactoWeb">Información contacto web:</string>
+    <string name="Horario">Horarios Apertura:</string>
 
 </resources>

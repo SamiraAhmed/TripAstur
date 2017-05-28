@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="es.uniovi.imovil.jcgranda.courses"
+    package="es.uniovi.imovil.samira.tripastur"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
     <application
-        android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_info"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="es.uniovi.imovil.jcgranda.courses.MainActivity"
-            android:label="@string/app_name" >
+            android:name="es.uniovi.imovil.samira.tripastur.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,13 +42,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="es.uniovi.imovil.jcgranda.courses.CourseDetailsActivity"
-            android:label="@string/course_details"
-            android:parentActivityName="es.uniovi.imovil.jcgranda.courses.MainActivity" >
+            android:name="es.uniovi.imovil.samira.tripastur.OficinaDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/oficina_details"
+            android:parentActivityName="es.uniovi.imovil.samira.tripastur.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="es.uniovi.imovil.jcgranda.courses.MainActivity" />
+                android:value="es.uniovi.imovil.samira.tripastur.MainActivity" />
         </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="es.uniovi.imovil.samira.tripastur.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="es.uniovi.imovil.samira.tripastur.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

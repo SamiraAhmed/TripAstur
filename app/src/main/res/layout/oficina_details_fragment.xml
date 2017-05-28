@@ -1,106 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/layout">
 
-    <TextView
-        android:id="@+id/nombre"
-        style="?android:attr/textAppearanceLarge"
+    <include
+        android:id="@+id/toolbarDetalleFragment"
+        layout="@layout/toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <ImageView
-        android:id="@+id/imagen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
-    <TextView
-        android:id="@+id/concejo"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/direccion"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/telefono"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/fax"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/email"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/web"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/web2"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/horario"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <TextView
-        android:id="@+id/masinfo"
-        style="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:textIsSelectable="true" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@+id/oficina_details_container"
-        app:layout_anchorGravity="top|end"
-        app:srcCompat="@android:drawable/ic_dialog_map" />
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_location"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                card_view:cardBackgroundColor="@color/cardview"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloUbicacion"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/Localizacion"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+
+                    android:id="@+id/ubicacion"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tituloUbicacion"
+                    android:padding="40dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_horario"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:cardBackgroundColor="@color/cardview"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloHorario"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/Horario"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/horario"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tituloHorario"
+                    android:padding="40dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:typeface="sans" />
+
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_contacto"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:cardBackgroundColor="@color/cardview"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloContacto"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/Contacto"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/contacto"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tituloContacto"
+                    android:padding="40dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:typeface="sans" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_contactoweb"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:cardBackgroundColor="@color/cardview"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulocontactoWeb"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/ContactoWeb"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/contactoWeb"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titulocontactoWeb"
+                    android:padding="40dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:typeface="sans" />
+
+            </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:layout_anchor="@+id/oficina_details_container"
+                app:layout_anchorGravity="top|end"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </LinearLayout>

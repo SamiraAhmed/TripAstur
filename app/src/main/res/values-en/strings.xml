@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TripAstur</string>
+    <string name="action_search_oficinas">Search offices</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapa">Nearby offices</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="oficina_details">Description</string>
+    <string name="ok">OK</string>
+    <string name="tituloPedirPermiso">Advice</string>
+    <string name="pedirPermiso">To be able to be located on the map it is necessary that you give permission to be geolocalized</string>
+    <string name="pref_Ofi_titulo">Choose favorite offices</string>
+    <string name="pref_fav">Favorite offices</string>
+    <string name="pref_oficinas">Favorite offices for user</string>
+    <string name="preferencias">Preferences</string>
+    <string name="title_activity_maps">Preferences</string>
+    <string name="tab_todas">All</string>
+    <string name="tab_favoritas">Favorites</string>
+    <string name="Localizacion">Location:</string>
+    <string name="Contacto">Telephone and fax contact information:</string>
+    <string name="ContactoWeb">Information contact web:</string>
+    <string name="Horario">Opening Hours:</string>
+</resources>

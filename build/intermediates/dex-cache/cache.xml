@@ -3,21 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\pioli\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jar="C:\Users\pioli\.android\build-cache\56bed3b41e4b277a666f899f1b82255b05d9e36c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\pioli\Desktop\TODO imovil\CoursesSesion5\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_7d8d9bd4afc02ead41104ae2a5fab1f03363f1a8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\pioli\.android\build-cache\0b092e045320b606bcd981dbf69a32f65e4dc867\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\pioli\Desktop\TODO imovil\CoursesSesion5\app\build\intermediates\pre-dexed\debug\classes_b8bf31e1fdfa9ca5082233e0540f8e70fe025db1.jar" />
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\pioli\Desktop\TripAstur\app\build\intermediates\pre-dexed\debug\classes_6ea206646c7e49d7ba8f6c717070872d45a354b3.jar" />
     </item>
 
 </items>

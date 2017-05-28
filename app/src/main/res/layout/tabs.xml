@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <include
+            android:id="@+id/toolbarPrincipal"
+            layout="@layout/toolbar" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent">
+
+                <include
+                    android:id="@+id/Oficinastab"
+                    layout="@layout/oficina_list_fragment" />
+
+                <include
+                    android:id="@+id/OficinasFavtab"
+                    layout="@layout/oficina_list_favorites" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

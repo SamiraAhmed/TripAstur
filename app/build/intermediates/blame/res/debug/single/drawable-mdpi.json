@@ -1,46 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_add_course.png",
-        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-mdpi\\ic_action_add_course.png"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_info.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\drawable-mdpi\\ic_info.png"
     },
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_fav_no_check.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\drawable-mdpi\\ic_fav_no_check.png"
     },
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_add_course.png",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_action_add_course.png"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_search.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_info.png",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_info.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_book_pile.png",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_book_pile.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_add_course.png",
-        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_action_add_course.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_search.png",
-        "source": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_book_pile.png",
-        "source": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\drawable-mdpi\\ic_book_pile.png"
-    },
-    {
-        "merged": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_book_pile.png",
-        "source": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\drawable-mdpi\\ic_book_pile.png"
+        "merged": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_fav_check.png",
+        "source": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\drawable-mdpi\\ic_fav_check.png"
     }
 ]

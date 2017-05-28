@@ -1,71 +1,23 @@
 [
     {
-        "outputFile": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+        "outputFile": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 58,
-                    "endOffset": 109
+                    "endColumn": 57,
+                    "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\pioli\\Desktop\\Trip_fragmentos\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 58,
-                        "endOffset": 259
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 58,
-                    "endOffset": 109
-                },
-                "from": {
-                    "file": "C:\\Users\\pioli\\Desktop\\CoursesSesion5\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 58,
-                        "endOffset": 259
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 58,
-                    "endOffset": 109
-                },
-                "from": {
-                    "file": "C:\\Users\\pioli\\Desktop\\TODO imovil\\CoursesSesion5\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "file": "C:\\Users\\pioli\\Desktop\\TripAstur\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
                         "startOffset": 206,
-                        "endColumn": 58,
-                        "endOffset": 260
+                        "endColumn": 57,
+                        "endOffset": 259
                     }
                 }
             }
