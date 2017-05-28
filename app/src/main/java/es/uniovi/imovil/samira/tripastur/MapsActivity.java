@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -165,7 +166,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Obtener mi localización
         miLocalizacion = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
         if (miLocalizacion == null) {
+            Toast.makeText(getApplicationContext() ,R.string.no_gps_activado,Toast.LENGTH_LONG).show();
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, locationRequest, this);
+
         } else {
             //no lo coge aún dándole permiso por el ritmo
             gMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM_CERCANO));
@@ -187,6 +190,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Location targetLocation = new Location("");
             targetLocation.setLatitude(oficinasT.getMapaX());
             targetLocation.setLongitude(oficinasT.getMapaY());
+
 
             float distanciaActual = miLocalizacion.distanceTo(targetLocation);
             if (distanciaMinima == 0) {
@@ -227,10 +231,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // Asking user if explanation is needed
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
-
-                // Show an explanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
+                
 
                 //Prompt the user once explanation has been shown
                 ActivityCompat.requestPermissions(this,

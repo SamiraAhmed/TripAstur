@@ -2,6 +2,24 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="C:\Users\pioli\Desktop\TripAstur\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\pioli\Desktop\TripAstur\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7ebe3da3ea7bd1c33da183960f7640b65c5dadb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pioli\Desktop\TripAstur\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c3b5472c09a6c3641194d96a0be7ebdeba61fba4">
+        <dex dex="C:\Users\pioli\Desktop\TripAstur\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b0064aa90c4a5114e0f45731fcd6140a3a3a972e\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\pioli\.android\build-cache\56bed3b41e4b277a666f899f1b82255b05d9e36c\output\jars\classes.jar"
         jumboMode="false"

@@ -22,5 +22,6 @@
     <string name="Contacto">Información de contacto telefónico y fax:</string>
     <string name="ContactoWeb">Información contacto web:</string>
     <string name="Horario">Horarios Apertura:</string>
+    <string name="no_gps_activado">No tiene la ubicación activada y es necesaria</string>
 
 </resources>
